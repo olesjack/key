@@ -1,0 +1,11 @@
+git init -b main
+git config --local user.name 'olesjack'
+git config --local user.email 'olesjack@olesjack.com'
+git add app.js
+git commit -m "First commit"
+git checkout -b gh-pages
+git add .
+git commit -m "Second commit"
+git remote add origin https://github.com/olesjack/key.git
+git push -f origin main
+git push -f origin gh-pages
